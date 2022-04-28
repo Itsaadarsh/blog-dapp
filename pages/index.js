@@ -102,7 +102,7 @@ const container = css`
 
 const buttonStyle = css`
   margin-top: 100px;
-  background-color: #fafafa;
+  background-color: #ed7979;
   outline: none;
   border: none;
   font-size: 44px;

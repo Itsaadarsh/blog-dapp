@@ -2,8 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #979797 !important;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 a {
@@ -25,7 +27,7 @@ a {
 }
 
 .editor-preview {
-  background-color: white !important;
+  background-color: #ffffff !important;
 }
 
 .CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
@@ -34,7 +36,7 @@ a {
 
 pre {
   padding: 20px;
-  background-color: #efefef;
+  background-color: #ffffff;
 }
 
 blockquote {

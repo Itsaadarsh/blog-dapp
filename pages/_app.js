@@ -108,11 +108,11 @@ const container = css`
 
 const linkContainer = css`
   padding: 30px 60px;
-  background-color: #fafafa;
+  background-color: #ed7979;
 `
 
 const nav = css`
-  background-color: white;
+  background-color: #ed7979;
 `
 
 const header = css`
@@ -146,7 +146,7 @@ const buttonContainer = css`
 `
 
 const buttonStyle = css`
-  background-color: #fafafa;
+  background-color: #ed7979;
   outline: none;
   border: none;
   font-size: 18px;
