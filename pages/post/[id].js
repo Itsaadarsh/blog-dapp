@@ -1,12 +1,12 @@
 import ReactMarkdown from 'react-markdown'
+import Link from 'next/link'
+import Blog from '../../artifacts/contracts/Blog.sol/Blog.json'
 import { useContext } from 'react'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 import { css } from '@emotion/css'
 import { ethers } from 'ethers'
 import { AccountContext } from '../../context'
 import { contractAddress, ownerAddress } from '../../config'
-import Blog from '../../artifacts/contracts/Blog.sol/Blog.json'
 
 const ipfsURI = 'https://ipfs.io/ipfs/'
 
@@ -60,11 +60,9 @@ export async function getStaticPaths() {
     const data = await contract.fetchPosts()
 
     const paths = data.map(d => ({ params: { id: d[2] } }))
-    console.log(paths);
 
     return {
-        paths,
-        fallback: true
+        paths, fallback: true
     }
 }
 
@@ -79,9 +77,7 @@ export async function getStaticProps({ params }) {
     }
 
     return {
-        props: {
-            post: data
-        },
+        props: { post: data },
     }
 }
 
